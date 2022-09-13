@@ -37,7 +37,6 @@ export class AddEditPatientDialog implements OnInit {
 
   save(): void {
     if (this.isEdit) {
-      debugger;
       this.service.updatePatient(this.patient.PatientId, this.patient).subscribe((response) => {
         if (response) {
           this.dialogRef.close(true);
@@ -64,7 +63,6 @@ export class AddEditPatientDialog implements OnInit {
   }
 
   onSubmit() {
-    console.log("Full Address", this.patient);  
   }
 
 

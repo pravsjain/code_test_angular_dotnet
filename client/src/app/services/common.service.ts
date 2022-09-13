@@ -43,12 +43,10 @@ export class CommonService {
     }
 
     updatePatient(id:number, payload:any) {
-      debugger;
       return this.http.put(this.baseURL + `/api/Patient/${id}`, payload);
     }
 
     deletePatient(id:number) {
-      debugger;
       return this.http.delete(this.baseURL + `/api/Patient/${id}`);
     }
 

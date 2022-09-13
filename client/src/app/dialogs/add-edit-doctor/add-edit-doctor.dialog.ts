@@ -20,7 +20,6 @@ export class AddEditDoctorDialog implements OnInit {
 
 
   ngOnInit(): void {
-  console.log(this.doctor);
   if(!this.isEdit){
     this.doctor=new DoctorModel();
   }
@@ -60,6 +59,5 @@ export class AddEditDoctorDialog implements OnInit {
   }
 
   onSubmit() {
-    console.log("Full Address", this.doctor);  
   }
 }
